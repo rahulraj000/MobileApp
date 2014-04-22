@@ -1,0 +1,26 @@
+<Alloy>
+	
+		<Window id="index" class="container" exitOnClose="false">
+		<View >
+		
+		<Button onClick="doClick" top="80"> Scan Barcode </Button>
+		<Label top="140" left="10">Result: </Label>
+		<Label id="scanResult"top="160" left="10"></Label>
+		<Label top="180" left="10">Content Type: </Label>
+        <Label id="scanContentType"  top="200" left="10" ></Label>
+        <Label top="220" left="10">Format: </Label>
+        <Label id="scanFormat" top="240" left="10"> </Label>
+        <Label top="260" left="10">Parsed Text: </Label>
+        <Label id="scanParsed" top="280" left="10"> </Label>
+       
+		
+	</View>
+	
+	
+	</Window>
+	<View id="overlay" background="transparent">
+		<Button top="10" width="200" id="cancelButton" onClick="doCancel"> Cancel </Button>
+		<Button id="switchButton" top="200"title="Front Camera" onClick="switchCamera"></Button>
+		
+	</View>
+</Alloy>
